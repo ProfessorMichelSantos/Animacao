@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/fragmentBotao">
+
+    <fragment
+        android:id="@+id/fragmentBotao"
+        android:name="com.aulaopet.animacao.FragmentBotao"
+        android:label="fragment_botao"
+        tools:layout="@layout/fragment_botao" >
+        <action
+            android:id="@+id/action_fragmentBotao_to_destino"
+            app:destination="@id/destino" />
+    </fragment>
+    <fragment
+        android:id="@+id/destino"
+        android:name="com.aulaopet.animacao.Destino"
+        android:label="fragment_destino"
+        tools:layout="@layout/fragment_destino" />
+</navigation>
